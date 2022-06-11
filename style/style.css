@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.wrap{
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.7);
+}
+header{
+    width: 100%;
+    height: 90px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.AF{
+    width: 70px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 36px;
+    color: chartreuse;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.burger{
+    width: 70px;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger_link{
+    width: 50px;
+    height: 34px;
+}
+.burgercontainer{
+    width: 50px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row{
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+main{
+    height: 90%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 600px;
+    height: 400px;
+    margin-top: 70px;
+    animation-name: move2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+.Hi{
+    width: 185px;
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: chartreuse;
+}
+.hi{
+    margin-top: 17px;
+}
+.hi_hand{
+    height: 58px;
+    width: 58px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.Me{
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 600;
+    color: chartreuse;
+    text-align: center;
+}
+.student{
+    margin-top: 15px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    color: chartreuse;
+}
+@keyframes move{
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    } 
+}
+@keyframes move2{
+    0%{
+        margin-bottom: 100px;
+        opacity: 10%;
+    }
+    100%{
+        margin-bottom: 0px;
+        opacity: 100%;
+    }
+}
+@media screen and (max-width:1000px){
+    .text{
+        width: 400px;
+        height: 200px;
+        margin: 0;
+    }
+    .Hi{
+        width: 160px;
+        font-size: 28px;
+    }
+    .Me{
+        font-size: 26px;
+    }
+    .student{
+        font-size: 24px;
+    }
+}

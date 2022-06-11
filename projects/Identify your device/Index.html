@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your devise is ...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            height: 450px;
+            width: 256px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text{
+            height: 30%;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: calc(26px + 0.5vw);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            height: 50%;
+            width: 100%;
+            background-image: url(computer.png);
+            background-size: cover;
+        }
+        .text2{
+            height: 20%;
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: calc(20px + 0.5vw);
+            font-family: 'Montserrat', sans-serif;
+        }
+        @media screen and (max-width:1512px){
+            .img{
+                background-image: url(laptop.png);
+                background-size: cover;
+            }
+            .text{
+                font-size: calc(20px + 0.5vw);
+            }
+            
+            .text2::after{
+                height: 100%;
+                width: 100vh;
+                font-size: calc(18px + 0.5vw);
+                text-align: center;
+                background-color: white;
+                position: absolute;
+                content: "laptop";
+            }
+        }
+        @media screen and (max-width:750px){
+            .img{
+                height: 128px;
+                background-image: url(tablet.png);
+                background-size: cover;
+            }
+            .text{
+                width: 200px;
+                font-size: calc(18px + 0.5vw);
+            }
+            .center{
+                height: 300px;
+                width: 128px;
+            }
+            
+            .text2::after{
+                height: 100%;
+                width: 100vh;
+                font-size: calc(14px + 0.5vw);
+                text-align: center;
+                background-color: white;
+                position: absolute;
+                content: "Tablet";
+            }
+        }
+        @media screen and (max-width:500px){
+            .img{
+                height: 64px;
+                background-image: url(premium-icon-iphone-2420529.png);
+                background-size: cover;
+            }
+            .text{
+                width: 150px;
+                font-size: calc(12px + 0.5vw);
+            }
+            .center{
+                height: 150px;
+                width: 64px;
+            }
+            
+            .text2::after{
+                height: 100%;
+                width: 100vh;
+                font-size: calc(12px + 0.5vw);
+                text-align: center;
+                background-color: white;
+                position: absolute;
+                content: "Phone";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="center">
+            <div class="text">Your devise is</div>
+            <div class="img"></div>
+            <div class="text2">Computer</div>
+        </div>
+    </div>
+</body>
+</html>

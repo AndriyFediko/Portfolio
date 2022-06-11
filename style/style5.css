@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: #555;
+}
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 7%;
+    z-index: 2;
+    box-shadow: 0 3px 10px yellow;
+    display: flex;
+    animation-name: move1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    justify-content: space-between;
+    background-color: #414141;
+    position: fixed;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #555;
+}
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    border-radius: 2px;
+    background: rgb(249,255,0);
+    background: linear-gradient(180deg, rgba(249,255,0,1) 0%, rgba(255,226,0,1) 100%);
+}
+.projects{
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: 600;
+    margin-top: 32px;
+    height: 100%;
+    height: 100%;
+    color: white;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.header_image{
+    height: 50px;
+}
+.projects::first-letter{
+    /* font-size: 50px; */
+    color: yellow;
+}
+.burgerbox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.burger{
+    width: 50px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burgerRow{
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: white;
+}
+@keyframes move1{
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: #555;
+}
+.container{
+    width: 100%;
+    padding: 0 15%;
+    padding-top: 200px;
+    height: auto;
+    background-color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+.social_Network_card{
+    width: 400px;
+    height: 450px;
+    background-color: #555;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.Card_image{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_description{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social_network_image{
+    height: 90%;
+}
+.social_network_name{
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+.view_button{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    width: 160px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    background-color: #414141;
+    margin-top: 50px;
+}
+.view_button:hover{
+    box-shadow: 0 0 15px black;
+    margin-top: 46px;
+    cursor: pointer;
+}
+.view_button:active{
+    box-shadow: 0 0 10px black;
+    margin-top: 50px;
+}
+@media screen and (max-width:1850px){
+    .container{
+        padding: 0 10%;
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width:1620px){
+    .social_Network_card{
+        width: 350px;
+        height: 400px;
+    }
+    .social_network_name{
+        font-size: 28px;
+    }
+    .view_button{
+        height: 55px;
+        width: 120px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1430px){
+    .container{
+        padding: 0 8%;
+        padding-top: 180px;
+    }
+}
+@media screen and (max-width:1400px){
+    header{
+        height: 70px;
+    }
+    .projects{
+        margin-top: 32px;
+        font-size: 36px;
+    }
+    .header_image{
+        height: 40px;
+    }
+    .burger{
+        width: 40px;
+        height: 24px;
+    }
+    .burgerRow{
+        height: 4px;
+    }
+}
+@media screen and (max-width:1370px){
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+    .social_Network_card{
+        margin: 30px 30px;
+    }
+}
+@media screen and (max-width:1000px){
+    .container{
+        padding-top: 120px;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+}
